@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Task 8
+
+LS_LIST=$(ls)
+
+for FILE in $LS_LIST; do
+    OUTPUT="${FILE##*-}"
+    echo $OUTPUT
+done
