@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Task 6
+
+COUNT=0
+while [ $COUNT -lt 20 ]
+do
+    COUNT=$((COUNT+1))
+    if [ $COUNT -eq 4 ]
+    then
+        echo $COUNT
+        echo bad luck from China
+    elif [ $COUNT -eq 9 ]
+    then
+        echo $COUNT
+        echo bad luck from Japan
+    elif [ $COUNT -eq 17 ]
+    then
+        echo $COUNT
+        echo bad luck from Italy
+    else
+        echo $COUNT
+    fi
+done
