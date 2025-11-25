@@ -4,6 +4,6 @@
 LS_LIST=$(ls)
 
 for FILE in $LS_LIST; do
-    OUTPUT="${FILE##*-}"
-    echo $OUTPUT
+    echo "${FILE##*-}"
 done
+
