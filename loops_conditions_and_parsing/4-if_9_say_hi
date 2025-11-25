@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Task 4
+
+COUNT=0
+while [ $COUNT -lt 10 ]
+do
+    echo Best School
+    COUNT=$((COUNT+1))
+    if [ $COUNT -eq 9 ]
+    then
+        echo Hi
+    fi
+done
