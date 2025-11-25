@@ -4,20 +4,19 @@
 COUNT=0
 while [ $COUNT -lt 20 ]
 do
-    COUNT=$((COUNT+1))
-    if [ $COUNT -eq 4 ]
-    then
-        echo $COUNT
+    
+    case $COUNT in
+    4)
         echo bad luck from China
-    elif [ $COUNT -eq 9 ]
-    then
-        echo $COUNT
+        ;;
+    
+    9)
         echo bad luck from Japan
-    elif [ $COUNT -eq 17 ]
-    then
-        echo $COUNT
+        ;;
+
+    17)
         echo bad luck from Italy
-    else
-        echo $COUNT
-    fi
+    esac
+    COUNT=$((COUNT+1))
+    echo $COUNT
 done
