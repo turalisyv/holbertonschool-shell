@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Task 7
+
+HOUR=0
+
+while [ $HOUR -lt 12 ]
+do
+    MINUTE=1
+    echo Hour: $HOUR
+    while [ $MINUTE -le 59 ]
+    do
+        echo $MINUTE
+        MINUTE=$((MINUTE+1))
+    done
+    HOUR=$((HOUR+1))
+done
+echo Hour: $HOUR
