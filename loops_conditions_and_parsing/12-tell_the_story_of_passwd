@@ -3,6 +3,6 @@
 
 while IFS=: read -r A B C D E F G
 do
-    echo "The user $A is part of the $D gang, lives in /$E and rides $G. $C's place is protected by the passcode $B , more info about the user here: $A"
-
+    echo "The user $A is part of the $D gang, lives in $F and rides $G. $C's place is protected by the passcode $B, more info about the user here: $A"
 done < /etc/passwd
+
