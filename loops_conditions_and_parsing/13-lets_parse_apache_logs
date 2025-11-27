@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Task 13
+
+awk '{print $1,$9}' apache-access.log 
+
