@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Task 11
 
-while [ 1 -eq 2 ]
+while [ -s "./etc/passwd" ]
 do
     echo ' '
 done
