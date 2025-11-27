@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Task 7
+# Task 9
 
-kill -KILL pgrep -f 7-highlander
+pkill -KILL pgrep -f 7-highlander
