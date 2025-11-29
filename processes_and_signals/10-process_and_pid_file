@@ -9,4 +9,4 @@ while true
 do
     echo 'To infinity and beyond'
     sleep 2
-done < /var/run/myscript.pid
+done > /var/run/myscript.pid
