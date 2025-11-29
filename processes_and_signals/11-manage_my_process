@@ -2,7 +2,7 @@
 # Task 11
 
 if [ $# -eq 0 ]; then
-    echo Usage: manage_my_process {start|stop|restart}
+    echo "Usage: manage_my_process {start|stop|restart}"
 fi
 
 if [ $1 == "start" ]; then
