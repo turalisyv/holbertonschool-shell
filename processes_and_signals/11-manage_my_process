@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 # Task 11
 
-if [ $# -eq 0 ]; then
+if [[ $# -eq 0 ]]; then
     echo "Usage: manage_my_process {start|stop|restart}"
 fi
 
-if [ $1 == "start" ]; then
+if [[ $1 == "start" ]]; then
     echo "manage_my_process started"
-    ./tmp/my_process
+    ./manage_my_process
 
-elif [ $1 == "stop" ]; then
+elif [[ $1 == "stop" ]]; then
     echo "manage_my_process stopped"
-    kill /tmp/my_process
+    kill /manage_my_process
 
-elif [ $1 == "restart" ]; then
+elif [[ $1 == "restart" ]]; then
     echo "manage_my_process restarted"
-    kill /tmp/my_process
-    ./tmp/my_process
+    kill /manage_my_process
+    ./manage_my_process
 fi
